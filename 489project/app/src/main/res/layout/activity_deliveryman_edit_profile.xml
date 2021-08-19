@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afeeee"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="DeliveryJet"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#eeeeee"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/labelLOGO"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="#728FCE"
+            android:onClick="True"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="25dp"
+                android:text="Email Address:"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:text="something123@gmail.com"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Full Name:"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/eName"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/labelPass1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Password:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/ePass1"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/labelPass2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Re-Type Password:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/ePass2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/labelPhone"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="contact No:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/ePhone"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/labelAddress"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Address:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/eAddress"
+            android:layout_width="match_parent"
+            android:lines="2"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/labelType"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Document Type:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbNID"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NID"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    />
+                <RadioButton
+                    android:id="@+id/rbPassport"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Passport"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    />
+                <RadioButton
+                    android:id="@+id/rbDrivingLicense"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Driving License"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/labelDocNum"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Document No:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/eDocNum"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="Cancel"
+            android:background="#FF1919"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="#00B31E"
+            android:textColor="#000000"
+            android:text="Save Changes"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</LinearLayout>

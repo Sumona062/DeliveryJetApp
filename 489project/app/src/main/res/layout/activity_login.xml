@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afeeee"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="DeliveryJet"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#eeeeee"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="42dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="New in this platform?"
+                android:textStyle="bold"
+                android:textColor="#008000"/>
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:text="Register"
+                android:background="#728FCE"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Email address:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="40dp"
+            />
+        <EditText
+            android:id="@+id/eEmail"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:hint="...............@gmail.com"
+            />
+        <TextView
+            android:id="@+id/labelPass"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Password:"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/ePass"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="42dp"
+            android:textColor="#000000"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbCompany"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Company"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    />
+                <RadioButton
+                    android:id="@+id/rbDeliveryman"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Delivery Man"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbRemMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#728FCE"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/btnLogIn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Log In"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
