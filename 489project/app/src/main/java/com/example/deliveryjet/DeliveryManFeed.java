@@ -84,7 +84,7 @@ public class DeliveryManFeed extends Activity {
                     String date = fieldValues[7];
                     String status = fieldValues[8];
                     String code = fieldValues[9];
-                    if(status.equals("Due")){
+                    if(status.equals("Assigned")){
                         Order o= new Order(key, orderId, email, details, weight, customerName, phone, address, date,status,code);
                         orders.add(o);
                     }

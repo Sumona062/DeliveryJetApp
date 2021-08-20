@@ -98,17 +98,17 @@ public class CreateOrder extends Activity {
 
 
         if(errorMSG.isEmpty()){
-            String value=orderId+";"+email+";"+details+";"+weight+";"+customerName+";"+phone+";"+address+";"+date+";"+"Due"+";"+code;
+            String value=orderId+";"+email+";"+details+";"+weight+";"+customerName+";"+phone+";"+address+";"+date+";"+"Assigned"+";"+code;
             String key= orderId+";"+email;
 
             System.out.print("key: "+key);
             System.out.print("value: "+value);
 
             Util.getInstance().setKeyValue(CreateOrder.this,key,value);
-            showDialog("Successfully Saved the Order","Info!","OK",false,email);
+            showDialog("Order successfully placed!!","Info!","OK",false,email);
         }
         else{
-            showDialog(errorMSG,"Error in Data!!","Back",true,email);
+            showDialog(errorMSG,"Error in order information!!","Back",true,email);
         }
 
     }

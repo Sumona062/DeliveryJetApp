@@ -129,10 +129,10 @@ public class EditDeliveryManProfile extends Activity {
             System.out.print("\nvalue: "+value);
 
             Util.getInstance().setKeyValue(EditDeliveryManProfile.this,key,value);
-            showDialog("Successfully Saved Data","Info!","OK",false,email);
+            showDialog("Profile successfully updated!!","Info!","OK",false,email);
         }
         else{
-            showDialog(errorMSG,"Error in Data!!","Back",true,email);
+            showDialog(errorMSG,"Error in profile information!!","Back",true,email);
         }
 
 

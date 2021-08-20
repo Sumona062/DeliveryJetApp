@@ -115,7 +115,7 @@ public class EditCompanyProfile extends Activity {
             System.out.print("\nvalue: "+value);
 
             Util.getInstance().setKeyValue(EditCompanyProfile.this,key,value);
-            showDialog("Profile Updated Successfully!","Info!!","OK",false,email);
+            showDialog("Profile Successfully Updated!","Info!!","OK",false,email);
         }
         else{
             showDialog(errorMSG,"Error in Profile Information!!","Back",true,email);

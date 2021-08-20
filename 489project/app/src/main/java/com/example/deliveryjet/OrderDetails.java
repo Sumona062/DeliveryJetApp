@@ -85,20 +85,19 @@ public class OrderDetails extends Activity {
 
             String errorMSG = "";
 
-            if (delCode.isEmpty()) {
+            if (delCode.isEmpty() && !code.equals(delCode)) {
                 errorMSG = "You must enter the correct order code to complete this delivery, Please re-try with the correct code!!\n";
             }
 
-            if (errorMSG.isEmpty() && code.equals(delCode)) {
+            if (errorMSG.isEmpty()) {
                 String value = orderId + ";" + email + ";" + details + ";" + weight + ";" + customerName + ";" + phone + ";" + address + ";" + date + ";" + "Delivered"+";"+code;
 
                 System.out.print("key: " + key);
                 System.out.print("value: " + value);
 
                 Util.getInstance().setKeyValue(OrderDetails.this, key, value);
-                showDialog("Successfully Delivered the Order", "Info!", "OK", false, delEmail,key);
+                showDialog("Successfully Delivered the Order", "Congratulation!!", "OK", false, delEmail,key);
             } else {
-                errorMSG = "You must enter the correct order code to complete this delivery, Please re-try with the correct code!!\n";
                 showDialog(errorMSG,"Error!!" , "Back", true, delEmail,key);
             }
         }
