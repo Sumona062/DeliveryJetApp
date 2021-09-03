@@ -5,14 +5,28 @@
     android:background="#afeeee"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="DeliveryJet"
-        android:textColor="#000000"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/image"
+            android:layout_marginRight="15dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DeliveryJet"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,7 +53,7 @@
             <TextView
                 android:id="@+id/labelOrderId"
                 android:layout_width="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:text="Order Id:"
                 android:textStyle="bold"
@@ -61,7 +75,7 @@
             <TextView
                 android:id="@+id/labelOrderDetails"
                 android:layout_width="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:text="Order Details:"
                 android:textStyle="bold"
@@ -105,7 +119,7 @@
         <TextView
             android:id="@+id/labelDueDate"
             android:layout_width="0dp"
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:layout_height="match_parent"
             android:text="Order Due Date:"
             android:textStyle="bold"
@@ -137,7 +151,7 @@
             <TextView
                 android:id="@+id/labelCompanyName"
                 android:layout_width="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:text="Name:"
                 android:textStyle="bold"
@@ -160,7 +174,7 @@
             <TextView
                 android:id="@+id/labelCompanyEmail"
                 android:layout_width="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:text="Email:"
                 android:textStyle="bold"
@@ -177,13 +191,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.25"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/labelCompanyAddress"
                 android:layout_width="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:text="Address:"
                 android:textStyle="bold"
@@ -206,7 +220,7 @@
             <TextView
                 android:id="@+id/labelCompanyPhone"
                 android:layout_width="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:text="Contact No:"
                 android:textStyle="bold"
@@ -239,7 +253,7 @@
         <TextView
             android:id="@+id/labelCustomerName"
             android:layout_width="0dp"
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:layout_height="match_parent"
             android:text="Name:"
             android:textStyle="bold"
@@ -259,11 +273,34 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/labelCustomerEmail"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="match_parent"
+                android:text="Email:"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/eCustomerEmail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25"
+            android:orientation="horizontal">
+
 
         <TextView
             android:id="@+id/labelCustomerAddress"
             android:layout_width="0dp"
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:layout_height="match_parent"
             android:text="Address:"
             android:textStyle="bold"
@@ -286,7 +323,7 @@
         <TextView
             android:id="@+id/labelCustomerNo"
             android:layout_width="0dp"
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:layout_height="match_parent"
             android:text="Contact No:"
             android:textStyle="bold"
@@ -317,7 +354,7 @@
             <TextView
                 android:id="@+id/labelCode"
                 android:layout_width="0dp"
-                android:layout_weight="0.8"
+                android:layout_weight="0.6"
                 android:layout_height="match_parent"
                 android:text="Enter Code:"
                 android:textStyle="bold"

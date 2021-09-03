@@ -5,14 +5,28 @@
     android:background="#afeeee"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="DeliveryJet"
-        android:textColor="#000000"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/image"
+            android:layout_marginRight="15dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DeliveryJet"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,27 +35,37 @@
         android:orientation="vertical"
         android:layout_margin="10dp"
         android:background="#eeeeee"
-        android:padding="12dp">
+        android:paddingTop="5dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="#eeeeee">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/btnLOGO"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Upload Logo"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:background="#728FCE"
+                android:onClick="True"/>
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:padding="5dp">
 
-        </ImageView>
-        <TextView
-            android:id="@+id/labelLOGO"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Upload Logo"
-            android:textStyle="bold"
-            android:padding="5dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:background="#728FCE"
-            android:onClick="True"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"

@@ -4,15 +4,30 @@
     android:layout_height="match_parent"
     android:background="#afeeee"
     android:orientation="vertical">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="DeliveryJet"
-        android:textColor="#000000"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/image"
+            android:layout_marginRight="15dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DeliveryJet"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
 
 
     <LinearLayout
